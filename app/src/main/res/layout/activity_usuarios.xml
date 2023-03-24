@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Usuarios"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CDCDCD" >
+
+        // BOTON VOLVER
+
+        <ImageButton
+            android:id="@+id/ibback"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="#CDCDCD"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24"/>
+
+        // BOTON LISTA
+
+        <ImageButton
+            android:id="@+id/ibuserslist"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="280dp"
+            android:background="#CDCDCD"
+            android:src="@drawable/ic_baseline_format_list_bulleted_24" />
+
+    </LinearLayout>
+
+
+    // TITULO
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USUARIO"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="45dp"
+        android:textStyle="bold" />
+
+
+    // IDENTIFICACION USUARIO
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID USER"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etiduser"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="IDENTIFICACIÓN"
+        android:textSize="16dp"
+        android:paddingRight="30dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:drawableStart="@drawable/ic_baseline_credit_card_24" />
+
+
+    // NOMBRE USUARIO
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USER FULL NAME"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="NOMBRE COMPLETO"
+        android:textSize="16dp"
+        android:paddingRight="30dp"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/ic_baseline_person_24" />
+
+
+    // EMAIL USUARIO
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USER EMAIL"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etuseremail"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="CORREO ELECTRÓNICO"
+        android:textSize="16dp"
+        android:paddingRight="30dp"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/ic_baseline_email_24" />
+
+
+    // CONTRSEÑA USUARIO
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USER PASSWORD"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etuserpassword"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="CONTRASEÑA"
+        android:textSize="16dp"
+        android:paddingRight="30dp"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_baseline_key_24" />
+
+
+    // USUARIO INACTIVO / ACTIVO
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INACTIVE / ACTIVE"
+        android:textSize="17dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/swuserstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:checked="false" />
+
+
+    // CRUD
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+
+        // CREAR USUARIO
+
+        <ImageButton
+            android:id="@+id/ibadduser"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#CDCDCD"
+            android:src="@drawable/ic_baseline_person_add_alt_1_24"/>
+
+
+        // ENCONTRAR USUARIO
+
+        <ImageButton
+            android:id="@+id/ibfinduser"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#CDCDCD"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_person_search_24" />
+
+
+        // EDITAR USUARIO
+
+        <ImageButton
+            android:id="@+id/ibedituser"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#CDCDCD"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_edit_24" />
+
+
+        // ELIMINAR USUARIO
+
+        <ImageButton
+            android:id="@+id/ibdeleteuser"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#CDCDCD"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_person_off_24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:background="#CDCDCD" > </LinearLayout>
+
+</LinearLayout>
